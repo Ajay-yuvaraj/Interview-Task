@@ -1,0 +1,572 @@
+/* .App {
+  max-width: 1400px;
+  width: 1400px;
+  padding: 0 3rem;
+  margin: 0 auto;
+} */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container.custom{
+  max-width: 1920px;
+  margin: 0;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+svg {
+  width: 20px;
+}
+.searchInput svg {
+  position: relative;
+  top: 0px;
+  left: 25px;
+}
+.form-input {
+  padding-left: 30px;
+}
+.CustomHeader {
+  display: flex;
+  align-items: center;
+}
+.ProfileIconcustom svg {
+  width: 40px;
+}
+.CustomNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 65px;
+  width: 10%;
+  top: 3px;
+}
+header {
+  position: relative;
+}
+.searchInput {
+  padding-top: 10px;
+}
+.sidebar-menu li.Customlist {
+  list-style: none;
+}
+.sidebar-menu {
+  padding: 0;
+  margin-top: 2rem;
+}
+.sidebar-menu li.Customlist {
+  list-style: none;
+}
+.sidebar-menu {
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.Custom-SideBar {
+  width: 5%;
+  float: left;
+}
+.CustomBody {
+  width: 90%;
+  float: left;
+}
+.sidebar-menu svg {
+  width: 35px;
+  fill: #bdbdbd;
+  stroke: #e3e3e3;
+}
+.CustomDashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+.numbersDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Totalp {
+  margin-bottom: 5px;
+}
+.customdiv svg {
+  width: 25px;
+}
+.circle-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 160px);
+  grid-gap: 80px;
+  width: 130px;
+  height: 130px;
+  background: #d9d7da;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1 {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 130px, 130px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #212020;
+  text-align: center;
+  margin-top: 13px;
+  margin-left: 13px;
+  color: white;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 18px;
+  top: -3px;
+  left: -3px;
+}
+
+/* color animation */
+
+.mask .fill-1 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #192ee9;
+}
+
+.mask.full-1,
+.circle .fill-1 {
+  transform: rotate(135deg);
+}
+
+@keyframes fill-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+.circle-wrap .inside-circle span {
+  font-size: 12px;
+}
+.CustomText {
+  padding: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.circle {
+  position: relative;
+  overflow: hidden;
+}
+.customProfitBoard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+.containerCustom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.customdiv,
+.customProfitBoard,
+.innerTasks,
+.CustomReviews,
+.OrdersParent,
+.CustomGraphsection {
+  background-color: #343434;
+  padding: 10px;
+  border: 1px solid #343434;
+  border-radius: 5px;
+}
+
+body {
+  font-family: sans-serif !important;
+  color: #fff !important;
+  background-color: #000 !important;
+}
+.customdiv.order svg {
+  fill: #1a1ae9;
+  stroke: #1a1ae9;
+}
+.customdiv.Delivery svg {
+  fill: #55f155;
+  stroke: #55f155;
+  height: 40px;
+}
+.customdiv.Revenue svg {
+  height: 40px;
+}
+.customdiv svg {
+  width: 35px;
+  margin: 10px 10px 10px 0;
+}
+.customdiv.Cancel svg {
+  fill: #e24305;
+  stroke: #e24305;
+}
+.customdiv.Revenue svg {
+  fill: #db087a;
+  stroke: #db087a;
+}
+.customdiv {
+  width: 23%;
+}
+.MenuHamBurger svg {
+  fill: #1a1ae9;
+  stroke: #1a1ae9;
+}
+.MenuHamBurger svg {
+  fill: #4040bb;
+  stroke: #4040bb;
+  width: 40px;
+}
+.Dashboard {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.CustomNav svg {
+  fill: #fff;
+  stroke: #fff;
+}
+.CustomGraphsection {
+  width: 65%;
+}
+.ActivityDetials {
+  width: 30%;
+}
+.Activitysection {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+.innerTasksDetial svg {
+  width: 65px;
+}
+.innerTasksDetial p {
+  font-size: 18px;
+}
+.innerTasksDetial.Goals svg {
+  fill: #eb1b1b;
+  stroke: #eb1b1b;
+}
+.innerTasks {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 2.9rem 1rem;
+  position: relative;
+}
+.Arrows svg {
+  fill: #fff;
+  stroke: #fff;
+  width: 25px;
+}
+.innerTasksDetial {
+  display: flex;
+  align-items: center;
+}
+
+.innerTasksDetial p {
+  margin-left: 16px;
+  margin-bottom: 0px;
+}
+.Arrows {
+  position: absolute;
+  right: 15px;
+}
+.CustomOrderSection {
+  display: flex;
+  justify-content: space-between;
+}
+.OrdersParent {
+  width: 65%;
+}
+.CustomReviews {
+  width: 30%;
+  height: 460px;
+  overflow-y: scroll;
+}
+.CustomerInfo {
+  display: flex;
+  align-items: center;
+}
+.CustomerInfo {
+  display: flex;
+  align-items: center;
+}
+.CustomerInfo svg {
+  width: 40px;
+  fill: #09abe1;
+  stroke: #09abe1;
+}
+.CustomerInfo p {
+  margin: 0 10px;
+}
+.Stars .fullstar {
+  fill: #dfdf27;
+  stroke: #dfdf27;
+}
+.Stars {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  margin: 10px 10px 10px 0;
+}
+.EmptyStar {
+  fill: #fff;
+  stroke: #fff;
+}
+.Stars svg {
+  width: 15px;
+}
+.innerTasksDetial.Dishes svg {
+  fill: #c56a1c;
+  stroke: #c56a1c;
+}
+.customReviewsdiv {
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid #505050;
+  margin-bottom: 10px;
+}
+::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #343434;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #919191;
+  border-radius: 10px;
+  border: 1px solid #343434;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.innerTasksDetial.Menus svg {
+  fill: #07afaf;
+  stroke: #07afaf;
+}
+
+/* order Table */
+
+a {
+  color: #28acd7;
+  text-decoration: none;
+}
+
+.my_account_orders {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.my_account_orders th {
+  text-align: left;
+}
+
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 6px;
+}
+.order .CustomerInfo svg {
+  width: 40px;
+}
+.customdiv .Percentage .green {
+  margin-top: 18px;
+}
+.Percentage svg {
+  width: 15px !important;
+  margin-top: 0px;
+}
+@media only screen and (max-width: 600px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 35%;
+  }
+
+  td:last-child {
+    border-width: 0;
+  }
+
+  td:before {
+    content: attr(data-title);
+    color: #ccc;
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-input {
+    display: none;
+  }
+  .CustomNav {
+    column-gap: 15px;
+    width: 25%;
+  }
+  .searchInput svg {
+    top: -4px;
+    width: 20px;
+    left: 160px;
+    fill: #fff;
+  }
+  .Custom-SideBar {
+    width: 100%;
+  }
+  .Percentage svg {
+    width: 15px !important;
+    margin-top: 0px;
+  }
+
+  .sidebar-menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .CustomBody {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .Dashboard {
+    margin-bottom: 0px;
+  }
+  .containerCustom {
+    flex-wrap: wrap;
+  }
+  .CustomDashboard,
+  .customProfitBoard {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .Activitysection,
+  .CustomOrderSection {
+    flex-wrap: wrap;
+  }
+  .CustomGraphsection {
+    width: 100%;
+  }
+  .ActivityDetials {
+    width: 100%;
+  }
+  .OrdersParent,
+  .CustomReviews {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  td.order-number {
+    position: relative;
+  }
+  .order .CustomerInfo svg {
+    width: 35px;
+  }
+  .CustomDashboard {
+    flex-wrap: wrap;
+  }
+  .customdiv {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .customdiv svg {
+    width: 45px;
+  }
+  .Totalp {
+    font-size: 18px;
+  }
+  .Customno {
+    font-size: 25px;
+  }
+  .Percentage {
+    font-size: 18px;
+  }
+  .customdiv .Percentage .green {
+    margin-top: 18px;
+  }
+  li.Customlist.HomeIcon:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0953ff;
+    bottom: -10px;
+    left: 0;
+  }
+  .Customlist.HomeIcon {
+    position: relative;
+  }
+  .CustomNav {
+    right: 50px;
+  }
+}
